@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="http://127.0.0.1:5500/CSS/webpage/images/rapido%20logo.svg"> -->
+    <title>Bharat moves on Rapido!</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <style>
+        ul{
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: space-around;
+            gap: 80px;
+            font-size: 25px;
+            margin-left: 400px;
+            color: black;
+           
+        }
+        a{
+            text-decoration-line: none;
+            gap: 30px;
+            color: black;
+        }
+        nav a:hover{
+            color: rgb(142, 136, 136);
+
+        }
+        nav
+        {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            background-color:white;
+            height: 90px;
+        }
+        #div1{
+            background-color: white;
+            height: 500px;
+            width: 100%;
+        }
+        #mg{
+            padding: 0px;
+            margin-top: -5px;
+            margin-left:  0px;       
+        }
+        input{
+            padding: ;
+        }
+        #div2{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 400px;
+            top: 160px;
+        }
+        input{
+            height: 60px;
+            width: 580px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black; 
+            border-radius: 10px;
+        }
+        button{
+            height: 60px;
+            width: 580px;
+            background-color: rgb(255, 202, 32);
+            font-weight: 700px;
+            font-size: 30px;
+border-radius: 10px;
+        }
+        h1{
+            font-size: 60px;
+
+        }
+        #div5{
+            /* border: 2px solid green; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+            
+        }
+        img{
+            height: 200px;
+            width: ;
+        }
+        /* #im{
+            position: absolute;
+            right: 200p;
+        } */
+         #color{
+color: rgb(235, 183, 14);
+font-size: 30px;
+margin-top: -60px;
+         }
+         #cc{
+            font-size:30px;
+            /* position: absolute;
+            left: 100px; */
+         }
+         #cc1{
+            font-size:30px;
+            /* position: absolute;
+            left: 400px; */
+         }
+         #cc2{
+            font-size:30px;
+            /* position: absolute;
+            left: 700px; */
+         }
+         #cc3{
+            font-size:30px;
+            position: absolute;
+            left: 1000px;
+         }
+         #cc4{
+            font-size:30px;
+            
+         }
+         #cc5{
+            font-size:30px;
+           
+         }
+         #b2{
+            height: 50px;
+            width: 200px;
+            
+            background-color: black;
+            color: white;
+         }
+
+            #a1{
+                color: white;
+            }
+         #b2
+         {
+            position: relative;
+            left: 80px;
+         }
+        
+            header{
+                background-color: aliceblue;
+                height: 600px;
+            }
+           #HL{
+            position: relative;
+            top: 100px;
+            left: 80px;
+           }
+           #hh{
+            position: relative;
+            top: 70px;
+            left: 80px;
+           }#ht{
+            color: rgb(220, 220, 19);
+            font-size: 40px;
+            position: relative;
+
+left: 80px;
+           }
+           #p1,#p2,#p3{
+            position: relative;
+            left: 80px;
+            font-size: 40px;
+        line-height: 20px;
+           }
+           #big{
+           margin-top: -500px;
+           margin-left: 800px;
+           height: 500px;
+           width: 500px;
+           }
+           #car{
+            background-color: #fff;
+            height: 900px;
+            margin-top: -300px;
+           }
+           #loose{
+          
+           margin-left: 650px;
+           margin-top: -100px;
+           }
+    #pp1{
+        font-size: 40px;
+        margin-top: -10px;
+    }
+    #pp2{
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    #pp3{
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    #b3{
+        height: 60px;
+        width: 350px;
+        background-color: black;
+        border-radius: 10px;
+    }
+#aa1{
+    color: white;
+}
+#small{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 400px;
+}
+#deck{
+    background-color: #fff;
+    height: 500px;
+}
+#div11{
+    margin-left: 100px;
+    margin-top: 300px;
+    /* border: 2px solid red; */
+    width: 500px;
+}
+#line1{
+    color: rgb(236, 236, 4);
+    font-size: 40px;
+    margin-top: -50px;
+   
+}
+#ppp1{
+    font-size: 40px;
+}
+#ppp2{
+
+    font-size: 40px;
+    line-height: 0px;
+    margin-top: -10px;
+}
+#know{
+    color: rgb(107, 107, 214);
+    font-size: 50px;
+}
+#idl{
+    margin-top: -500px;
+    margin-left: 700px;
+    height: 500px;
+    width: 600px;
+}
+#dd12{
+    background-color: black;
+    height: 500px;
+}
+#gg1{
+    color: white;
+    font-size: 60px;
+    margin: 50px;
+    margin-top: 30px;
+    position: relative;
+    top: 40px;
+    left: 400px;
+}
+#line2{
+    font-size: 50px;
+    color: rgba(216, 216, 20, 0.877);
+    position: relative;
+    left: 600px;
+    margin-top: -50px;
+}
+#nn1{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    left: 400px;
+    top: 20px;
+}
+#v1{
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    left: 400px;
+    top :5px;
+}
+#v2{
+    font-size: 30px;
+    color: #fff;
+    position: relative;
+    left: 430px;
+  margin-top: -20px;
+}
+#nn2{
+    height: 100px;
+    position: relative;
+    top: -230px;
+    left: 750px;
+}
+#uu1{
+    font-size: 35px;
+    color: #fff;
+margin-top: -210px;
+margin-left: 700px;
+
+}
+#uu2{
+    color: #fff;
+    font-size: 35px;
+    margin-top: -30px;
+    margin-left: 720px;
+}
+#ff1{
+    border-bottom: 2px solid black;
+    border-top:2px solid black ;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#jj1{
+    position: relative;
+    margin-top: 170px;
+    margin-left: 100px;
+    font-size: 20px;
+    width: 100%;
+}
+#smile{
+    border-top: 1px solid rgb(86, 82, 82);
+}
+#last{
+    margin-left: 200px;
+    font-size: 20px;
+    color: rgb(104, 99, 99);
+}
+#slash{
+    margin-top: -200px;
+}
+
+body{
+    flex-wrap: wrap;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <img id="mg" height="400" width="200"  src="./images/rapido logo.svg" alt="">
+        <ul>
+            <a href="">About us</a>
+            <a href="">Safety</a>
+            <a href="">Blog</a>
+            <a href="">Contact Us</a>
+        </ul>
+    </nav>
+    <div id="div1">
+    <div id="div2">
+        <h1>bharat Moves on rapido!</h1> <br>
+
+        <input id="i1" type="location" placeholder="Enter Picup Location" name="" id=""> <br>
+        <input id="i2" type="location" placeholder="Enter Drop Location"><br>
+        <button><a href="">Book ride</a></button>
+        <br>
+    </div>
+    
+</div>
+
+<div id="div3">
+    <div id="div4">
+        <h1>Our Services</h1>
+        <p id="color">_______</p>
+        <div id="div5">
+            <div id="mm1">
+            <img src="https://rapido-app-assets-staging.storage.googleapis.com/c9bf4e04eeb9f9e5a52c55a143d095c5_1738146120477.webp" alt="">
+            <p id="cc">Bike</p>
+             
+        </div>
+        <div id="mm1">  
+        <img src="https://rapido-app-assets-staging.storage.googleapis.com/baa331808b70d22c33bdcb6e96c3a104_1738146204279.webp" alt="">
+        <p id="cc1">Auto</p>
+    </div> 
+       
+    <div id="mm2">
+    <img src="https://rapido-app-assets-staging.storage.googleapis.com/1075eff8297f3213f71cf66b5852ced5_1738146244087.webp" alt="">
+    <p id="cc2">Auto Share</p>
+</div>
+    
+<div id="mm3">
+<img src="https://rapido-app-assets-staging.storage.googleapis.com/5e0eec287db4aae2e64b17b9fa04cbe0_1738146281373.webp" alt="">
+<p id="cc3">parcel</p>
+</div>
+<div id="mm4">
+
+    <img src="https://rapido-app-assets-staging.storage.googleapis.com/dd03f189ce375502079087fa3688f981_1738146314270.webp" alt="">
+    <p id="cc4">Cab economy</p>
+</div>
+<div id="mm5">
+    <img id="im" src="https://rapido-app-assets-staging.storage.googleapis.com/ed7c8d4653fee97d2cd5c76f00871d72_1738146343883.webp" alt="">
+  
+    <p id="cc5">Car premium</p>
+</div>
+
+
+
+
+
+
+
+    </div>
+    </div>
+</div>
+<header id="header">
+    <div id="div9">
+    <h1 id="HL">Get Quick Rides,</h1>
+    <h1 id="hh">Low Fares</h1>
+    <h2 id="ht">______</h2>
+    <p id="p1">In Rapido we ensure our</p>
+    <p id="p2">customers get rides quickly</p>
+    <p id="p3">at the most affordable prices.</p>
+    <button id="b2"><a id="a1" href="">Book Ride &rightarrow;</a></button>
+
+</div>
+<img   id="big" src="https://rapido-app-assets-staging.storage.googleapis.com/7bfb291ed6fd8fef3949b695f66f0441_1738146457741.webp" alt="">
+</header>
+
+<div id="car">
+    <img id="small" src="https://rapido-app-assets-staging.storage.googleapis.com/c1ec7791629614c8c040a2a8c68bbc79_1738146545252.webp" alt="">
+<div id="loose">
+    <h1>Flexible Hours &</h1>
+    <h1>High Earnings</h1>
+    <p id="pp1">Join as a Rapido captain and</p>
+    <p id="pp2">earn on your own terms.</p>
+    <p id="pp3">Driver whenever you want."></p>
+    <button id="b3"><a id="aa1" href="">Start Earning&rightarrow;</a></button>
+</div>
+</div>
+
+<div id="deck">
+<div id="div11">
+    <h1 id="tt">Safety for all</h1>
+    <p id="line1">________</p>
+    <p id="ppp1">At Rapido, your safety is our priority. We’re dedicated to making every ride safe and</p>
+     <p id="ppp2">comfortable.</p>
+     <a id="know" href="">Know More&GreaterGreater;</a>
+</div>
+<img   id="idl" src="https://rapido-app-assets-staging.storage.googleapis.com/fc70552b297693e48cef580e9f9c50c3_1738574004491.webp" alt="">
+</div>
+<div id="dd12">
+    <h1 id="gg1">Download Now</h1>
+    <p id="line2">____</p>
+    <div id="df1">
+        <img id="nn1" src="https://rapido-app-assets.storage.googleapis.com/5c6ff9a6070679cf24dbf94c5b78fbbc_1743499170110.svg" alt="">
+   
+       <p id="v1">Rapido: Bike-Taxi,</p>
+       <p id="v2">
+        Auto & Cabs
+       </p>
+
+       <img id="nn2" src="https://rapido-app-assets-staging.storage.googleapis.com/d261bc5886ba0e8d96fe1257004bbfb7_1738146890759.webp" alt="">
+    <p id="uu1">Rapido Captain:</p>
+    <p id="uu2">Drive & Earn</p>
+    
+    </div>
+</div>
+
+<div id="ff1">
+    <span><img src="https://rapido-app-assets.storage.googleapis.com/accad5713b1c3eea6c5fe812ae1b411c_1737391637497.svg" alt=""></span>
+    <span><img src="https://rapido-app-assets.storage.googleapis.com/0a78fb804f5a18beb78abbf9380ee332_1737391634474.svg" alt=""></span>
+   <span><img src="https://rapido-app-assets.storage.googleapis.com/d132b2d8ca47e2802f3fbcfc554d77db_1737391638642.svg" alt=""></span>
+</div>
+
+
+<div id="jj1">
+    <img id="slash" height="400" width="200" src="./images/NewLogo rapido.svg" alt="">
+    <pre>Home                         Coustmer Terms-Bike Taxi</pre>
+    <pre>About us                     Coustmer terms-Cabs and Auto</pre>
+    <pre>Careers                      Corporate Affairs</pre>
+    <pre>Saftey                       Captain Term-Bike Taxi</pre>
+    <pre>Blog                         Captain Terms-Cabs and Auto</pre>
+    <pre>Press</pre>
+    <pre>Privacy Policy</pre>
+</div>
+<div id="smile"></div>
+<p id="last">© 2025 Rapido Transportation. All rights reserved.</p>
+</body>
+</html>
